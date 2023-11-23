@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: black;
+  color: #666;
+  text-align: center;
+}
+audio {
+  width: 450px;
+  margin: 30px 0;
+}
+.container {
+  height: 420px;
+  overflow: hidden;
+  border: 1px solid white;
+}
+.lrc-list {
+  transition: 0.2s;
+  /* 只针对数值类属性有效 */
+}
+li {
+  list-style: none;
+  height: 30px;
+  line-height: 30p;
+}
+li.active {
+  color: white;
+  transform: scale(1.2);
+}
