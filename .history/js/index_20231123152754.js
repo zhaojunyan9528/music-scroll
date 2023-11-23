@@ -27,6 +27,7 @@ function parseTime(timestr) {
   let [minute, second] = timestr.split(':')
   return (Number(minute) * 60 + Number(second)).toFixed(3)
 }
+
 let doms = {
   audio: document.querySelector('audio'),
   ul: document.querySelector('ul'),

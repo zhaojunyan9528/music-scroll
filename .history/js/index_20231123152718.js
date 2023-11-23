@@ -19,14 +19,15 @@ function parseLrc() {
 /**
  * @description 格式化 分:秒 类型时间，返回时间，单位秒
  * @author zjy
- * @param {string} timestr 
+ * @param {string} str 
  * @returns {number}
  * @example parseTime('1:23') 返回83，表示1分23秒
  */
-function parseTime(timestr) {
-  let [minute, second] = timestr.split(':')
+function parseTime(str) {
+  let [minute, second] = str.split(':')
   return (Number(minute) * 60 + Number(second)).toFixed(3)
 }
+
 let doms = {
   audio: document.querySelector('audio'),
   ul: document.querySelector('ul'),
